@@ -21,14 +21,14 @@ import httpx
 from supabase import Client, create_client
 
 
-SUPABASE_URL = os.getenv(
-    "SUPABASE_URL",
-    "https://yndlhhkhylwihsggdyru.supabase.co",
-)
-SUPABASE_SERVICE_KEY = os.getenv(
-    "SUPABASE_SERVICE_KEY",
-    "SUPABASE_SERVICE_KEY_PLACEHOLDER",
-)
+SUPABASE_URL = os.getenv("SUPABASE_URL", "")
+SUPABASE_SERVICE_KEY = os.getenv("SUPABASE_SERVICE_KEY", "")
+
+if not SUPABASE_URL or not SUPABASE_SERVICE_KEY:
+    raise RuntimeError(
+        "SUPABASE_URL and SUPABASE_SERVICE_KEY must be set in environment. "
+        "Copy .env.example to .env and fill in your Supabase credentials."
+    )
 
 _supabase_client: Optional[Client] = None
 _rest_client: Optional[httpx.AsyncClient] = None
