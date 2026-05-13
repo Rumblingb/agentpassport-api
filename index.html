@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgentPassport API — Governed Payments for AI Agents</title>
+  <meta name="description" content="AgentPassport API: governed payment middleware for AI agents. Guardrails, scoped tokens, immutable audit trail. Built on Stripe.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0b; color: #e4e4e7; line-height: 1.6; }
+    .container { max-width: 720px; margin: 0 auto; padding: 80px 24px; }
+    h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; background: linear-gradient(135deg, #6366f1, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    h2 { font-size: 1.5rem; font-weight: 600; margin: 48px 0 16px; color: #a1a1aa; }
+    p { font-size: 1.125rem; color: #a1a1aa; margin-bottom: 24px; }
+    .badge { display: inline-block; background: #18181b; border: 1px solid #27272a; border-radius: 6px; padding: 4px 12px; font-size: 0.875rem; color: #71717a; margin-right: 8px; }
+    .features { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 32px 0; }
+    .feature { background: #18181b; border: 1px solid #27272a; border-radius: 8px; padding: 20px; }
+    .feature h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; color: #e4e4e7; }
+    .feature p { font-size: 0.875rem; color: #71717a; margin: 0; }
+    .links { margin-top: 48px; }
+    .links a { display: inline-block; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none; margin-right: 12px; }
+    .btn-primary { background: #6366f1; color: #fff; }
+    .btn-primary:hover { background: #4f46e5; }
+    .btn-secondary { background: #18181b; border: 1px solid #27272a; color: #e4e4e7; }
+    .btn-secondary:hover { background: #27272a; }
+    .api-ref { background: #18181b; border: 1px solid #27272a; border-radius: 8px; padding: 20px; margin-top: 32px; }
+    .api-ref code { font-family: 'JetBrains Mono', monospace; font-size: 0.875rem; color: #a1a1aa; }
+    .endpoint { display: flex; align-items: center; gap: 12px; padding: 8px 0; border-bottom: 1px solid #27272a; }
+    .method { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; }
+    .post { background: #065f46; color: #34d399; }
+    .get { background: #1e3a5f; color: #60a5fa; }
+    footer { margin-top: 80px; padding-top: 24px; border-top: 1px solid #27272a; font-size: 0.875rem; color: #52525b; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>AgentPassport API</h1>
+    <p>Governed payment middleware for AI agents. Guardrails, scoped tokens, and immutable audit trails — built on Stripe.</p>
+    <div>
+      <span class="badge">v0.1.0</span>
+      <span class="badge">REST API</span>
+      <span class="badge">Stripe</span>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <h3>Guardrails Engine</h3>
+        <p>9 configurable checks: spending limits, velocity, allowlists, MFA. Agents can't overspend or reach unauthorized endpoints.</p>
+      </div>
+      <div class="feature">
+        <h3>Scoped Tokens</h3>
+        <p>Per-capability JWT tokens with expiry, budget caps, and capability bindings. Rotate independently of the master API key.</p>
+      </div>
+      <div class="feature">
+        <h3>Audit Trail</h3>
+        <p>SHA-256 hashed, timestamped logs for every authorization decision. Tamper-evident chain for compliance.</p>
+      </div>
+      <div class="feature">
+        <h3>Stripe Integration</h3>
+        <p>Payment intents, subscriptions, invoices, and payouts through a single agent-friendly interface.</p>
+      </div>
+    </div>
+
+    <div class="links">
+      <a href="https://github.com/Rumblingb/agentpassport-api" class="btn-secondary">GitHub</a>
+      <a href="https://buy.stripe.com/28E3cxflRabW1jqgvx1oI0s" class="btn-primary">Subscribe $19/mo</a>
+    </div>
+
+    <div class="api-ref">
+      <h3 style="color:#e4e4e7; font-size:1rem; margin-bottom:16px;">Quick API Reference</h3>
+      <div class="endpoint"><span class="method post">POST</span> <code>/v1/authorize</code> <span style="color:#71717a;font-size:0.875rem;">Create authorization request</span></div>
+      <div class="endpoint"><span class="method get">GET</span> <code>/v1/authorize/:id</code> <span style="color:#71717a;font-size:0.875rem;">Check authorization status</span></div>
+      <div class="endpoint"><span class="method post">POST</span> <code>/v1/tokens</code> <span style="color:#71717a;font-size:0.875rem;">Issue scoped capability token</span></div>
+      <div class="endpoint"><span class="method get">GET</span> <code>/v1/tokens/:id</code> <span style="color:#71717a;font-size:0.875rem;">Inspect token</span></div>
+    </div>
+
+    <footer>
+      AgentPay Labs &middot; Built on Stripe &middot; <a href="https://github.com/Rumblingb/agentpassport-api" style="color:#6366f1;text-decoration:none;">GitHub</a>
+    </footer>
+  </div>
+</body>
+</html>
