@@ -132,7 +132,8 @@ Nine checks on every transaction:
 | Pro | $19/mo | 500 transactions/day, 50 active tokens |
 | Enterprise | $99/mo | Unlimited, custom guardrails, priority support |
 
-→ [Subscribe on Stripe](https://buy.stripe.com/agentpassport)
+→ [Subscribe on Stripe — Pro $19/mo](https://buy.stripe.com/28E3cxflRabW1jqgvx1oI0s)  
+→ [Subscribe on Stripe — Enterprise $99/mo](https://buy.stripe.com/eVqfZjflRgAk1jqfrt1oI0t)
 
 ## Deploy
 

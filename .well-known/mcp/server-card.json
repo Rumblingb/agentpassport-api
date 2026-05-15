@@ -1,0 +1,16 @@
+{
+  "name": "agentpassport-api",
+  "displayName": "AgentPassport API",
+  "description": "Governed payment middleware for AI agents. Built on Stripe. Guardrails engine, scoped tokens, immutable audit trail.",
+  "repository": "https://github.com/Rumblingb/agentpassport-api",
+  "homepage": "https://rumblingb.github.io/agentpassport-api/",
+  "runtime": "python",
+  "command": "python3",
+  "args": [
+    "main.py"
+  ],
+  "env": {
+    "SUPABASE_URL": "https://your-project.supabase.co",
+    "SUPABASE_SERVICE_KEY": "your-service-key"
+  }
+}
