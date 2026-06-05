@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#06060f"/>
+<stop offset="100%" stop-color="#7c3aed" stop-opacity="0.3"/>
+</linearGradient>
+<radialGradient id="r" cx="0.8" cy="0.2" r="0.8">
+<stop offset="0%" stop-color="#7c3aed" stop-opacity="0.4"/>
+<stop offset="100%" stop-color="#06060f" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect width="1200" height="630" fill="url(#g)"/>
+<rect width="1200" height="630" fill="url(#r)"/>
+<rect x="60" y="60" width="100" height="4" fill="#7c3aed"/>
+<text x="60" y="320" font-family="Courier New, monospace" font-size="72" font-weight="bold" fill="#7c3aed">AgentPassport API</text>
+<text x="60" y="400" font-family="Courier New, monospace" font-size="36" fill="#c8c8e0">Identity Layer for AI Agents</text>
+<rect x="60" y="440" width="1080" height="1" fill="#7c3aed" opacity="0.3"/>
+<text x="60" y="490" font-family="Courier New, monospace" font-size="20" fill="#6a6a8a">github.com/Rumblingb/agentpassport-api</text>
+<text x="60" y="560" font-family="Courier New, monospace" font-size="24" fill="#7c3aed" opacity="0.8">AgentPay Labs - MCP for AI Agents</text>
+</svg>
